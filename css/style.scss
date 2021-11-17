@@ -185,7 +185,6 @@ $main_font: 'Open Sans', sans-serif;
       margin-bottom: 50px;
     }
     .comfort__text{
-      font-family: Open Sans;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -237,8 +236,186 @@ $main_font: 'Open Sans', sans-serif;
   }
 }
 
+.place{
+  margin-top: 200px;
+  .container{
+    padding-left: 210px;
+    max-width: 1600px;
+    margin: auto;
+    .place__title{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 62px;
+      letter-spacing: 0.085em;
+      text-transform: capitalize;
+      color: #2F3139;
+      margin-bottom: 70px;
+    }
+    .place__text{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000000;
+      opacity: 0.5;
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.specific{
+  margin-top: 200px;
+  .container{
+    padding-left: 210px;
+    max-width: 1600px;
+    margin: auto;
+    .specific__title{
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 62px;
+      letter-spacing: 0.085em;
+      color: #2F3139;
+    }
+    .wrap{
+      @include flexbox();
+      ul{
+        list-style-type: none;
+        margin-top: 60px;
+        .specific__item{
+          margin-bottom: 50px;
+          margin-right: 100px;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+        }
+      }
+    }
+    .specific__photo{
+      @include flexbox();
+      margin-top: 200px;
+      justify-content: space-between;
+      .photo__item{
+        margin-bottom: 180px;
+        .item__pic{
+          max-width: 420px;
+          margin-bottom: 20px;
+        }
+        .item__text{
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 25px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
 footer{
-  margin-top: 600px;
+  background-color: #F3F3F3;
+  padding-top: 150px;
+  .container{
+    padding-left: 210px;
+    max-width: 1600px;
+    margin: auto;
+    @include flexbox();
+    justify-content: space-between;
+    .list{
+      .title__list{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+        margin-bottom: 35px;
+      }
+      .list__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        opacity: 0.5;
+        margin-bottom: 53px;
+      }
+      .list__down{
+        @include flexbox();
+        justify-content: space-between;
+        .left__down{
+          i{
+            margin-right: 18px;
+          }
+          span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+            opacity: 0.6;
+          }
+        }
+        a{
+          padding: 16px 31px;
+          border: 1.5px solid #717171;
+          text-decoration: none;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 25px;
+          text-transform: capitalize;
+          color: #717171;
+        }
+      }
+      ul{
+        margin-bottom: 80px;
+        .list__item{
+          list-style: none;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 33px;
+          color: #000000;
+        }
+      }
+    }
+    .social{
+      padding: 45px 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: uppercase;
+      a{
+        margin-right: 45px;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #000000;
+      }
+    }
+    .design{
+      padding: 45px 0;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+      opacity: 0.5;
+    }
+  }
+  .footer__line{
+    opacity: 0.1;
+    border: 1px solid #000000;
+  }
+
 }
 
 
